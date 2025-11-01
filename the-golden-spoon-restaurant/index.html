@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amrutha | Modern Indian Dining</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'teko': ['Teko', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'brand-saffron': '#F4A261',
+              'brand-charcoal': '#1F2421',
+              'brand-maroon': '#800000',
+              'brand-cream': '#F1EADC',
+              'brand-gray': '#AAAAAA',
+            },
+            backgroundImage: {
+              'hero-bg': "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop')",
+              'about-bg': "url('https://images.unsplash.com/photo-1625869033359-22decd083b40?q=80&w=1974&auto=format&fit=crop')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

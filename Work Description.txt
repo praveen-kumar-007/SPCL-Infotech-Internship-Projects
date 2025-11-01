@@ -1,0 +1,95 @@
+Internship Task: ERP System - Operation Theatre 
+
+Praveen Kumar
+Module: Operation Theatre
+Sub-Modules: 
+    A. Booking List, 
+    B. Settings, 
+    C. Reports
+Deadline: November 3, 2025
+Technology Stack: HTML5, CSS3 (Bootstrap/Tailwind CSS), JavaScript, React.js
+Version Control: GitHub
+
+
+
+Day 1: October 28, 2025 - Setup 
+Start Time 6PM 
+
+Setup 
+Project Setup:
+Create a new React project (e.g., using Create React App or Vite).
+Initialize a Git repository and make the initial commit: git init, git add ., git commit -m "Initial project setup".
+Create a new repository on GitHub and link your local repository. Push initial code: git remote add origin <repo_url>, git branch -M master, git push -u origin master.
+Install CSS framework (Bootstrap or Tailwind CSS) and configure it in your project.
+End Time 8PM
+
+
+
+Day 2: October 29, 2025 - Core Structure (Operation Theatre - Booking List)
+Start Time 6PM
+
+Component Structure:
+Create a main OperationTheatre component.
+Create sub-components for 
+        1. BookingList 
+        2. Settings
+        3. Reports 
+within the OperationTheatre component.
+
+Design Layout of the Project and Added the Search Functionality in the Booking Page
+
+End Time 9 PM
+
+
+
+
+
+
+Day 3: October 30, 2025 Resturant Landing Page
+New project assigned
+Start Time 6:15 PM
+
+Task Description:
+Initialize React app using create-react-app.
+Install and configure Tailwind CSS for styling.
+Create project folder structure (components, assets, pages).
+Develop basic UI components: Navbar, Header, and Footer.
+Ensure responsive layout across devices.
+
+End time 9:30PM
+
+
+
+
+Day 4: October 31, 2025 – Restaurant Landing Page
+Start Time: 7:00 PM
+
+Task Description:
+Build remaining sections: About, Menu, and Contact.
+Implement smooth navigation using React Router DOM.
+Apply responsive design and interactive hover effects with Tailwind CSS.
+Test layout on mobile, tablet, and desktop devices.
+
+End Time: 10:15 PM
+
+
+
+Day 5: November 01, 2025 – Restaurant Landing Page
+Start Time: 6:00 PM
+
+Devlop Code for 
+    Testimonials
+    About
+    Menu
+    Buttons 
+    Advance css with hover effects
+
+Conect all components with app.tsx 
+Deploy on GitHub with 
+git add .
+git commit -m "Message"
+git push origin master
+
+
+End time:  9:30PM
+
