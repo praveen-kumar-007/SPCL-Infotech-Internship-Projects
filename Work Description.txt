@@ -93,3 +93,18 @@ git push origin master
 
 End time:  9:30PM
 
+
+
+
+Day 6: November 02, 2025 (Sunday Holiday)
+
+
+
+Day 7: November 03, 2025 - Restaurant Landing Page
+
+Start Time: 6:00PM
+
+Finalise code in footer and make detailing in Code
+Update the Readme.md and Push on GitHub
+
+End Time 8:00 PM

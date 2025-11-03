@@ -42,7 +42,7 @@ INSTALLATION
 ------------------------------------------------------------
 Clone the repository and install dependencies:
 
-git clone https://github.com/praveen-kumar-007/SPCL-Infotech-Internship-Tasks.git
+git clone https://github.com/praveen-kumar-007/SPCL-Infotech-Internship-Projects.git
 cd the-golden-spoon-restaurant
 npm install make
 
