@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Heart, User, Menu } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -115,12 +116,66 @@ const Navbar: React.FC = () => {
             <button className="p-2 text-gray-600 hover:text-cyan-500 hover:bg-cyan-50 rounded-full transition-all duration-300 hover:scale-110 hover-glow">
               <User className="h-6 w-6" />
             </button>
-             <button className="md:hidden p-2 text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-full transition-all duration-300 hover-glow">
+             <button
+              className="md:hidden p-2 text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-full transition-all duration-300 hover-glow"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle navigation"
+            >
               <Menu className="h-6 w-6" />
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-2 bg-white/90 backdrop-blur-lg border-t border-white/30 shadow-lg">
+          <Link
+            to="/buy"
+            onClick={() => setMobileOpen(false)}
+            className={`block w-full px-4 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              isActive('/buy')
+                ? 'bg-gradient-to-r from-red-500 to-red-600 text-white shadow-lg hover-glow'
+                : 'text-gray-700 hover:bg-red-50'
+            }`}
+          >
+            Buy
+          </Link>
+          <Link
+            to="/rent"
+            onClick={() => setMobileOpen(false)}
+            className={`block w-full px-4 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              isActive('/rent')
+                ? 'bg-gradient-to-r from-cyan-500 to-cyan-600 text-white shadow-lg hover-glow'
+                : 'text-gray-700 hover:bg-cyan-50'
+            }`}
+          >
+            Rent
+          </Link>
+          <Link
+            to="/sell"
+            onClick={() => setMobileOpen(false)}
+            className={`block w-full px-4 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              isActive('/sell')
+                ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-lg hover-glow'
+                : 'text-gray-700 hover:bg-yellow-50'
+            }`}
+          >
+            Sell
+          </Link>
+          <Link
+            to="/agents"
+            onClick={() => setMobileOpen(false)}
+            className={`block w-full px-4 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              isActive('/agents')
+                ? 'bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-lg hover-glow'
+                : 'text-gray-700 hover:bg-purple-50'
+            }`}
+          >
+            Agents
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
