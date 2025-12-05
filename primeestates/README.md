@@ -8,7 +8,7 @@
 </div>
 
 ## Overview
-PrimeEstates is a modern real-estate platform built with React + TypeScript and a vibrant red/cyan/yellow theme. It features rich property listings, filters, detailed pages, an AI assistant (Gemini), and a polished UI with glassmorphism and micro-animations.
+PrimeEstates is a modern real-estate platform built with React + TypeScript and a vibrant red/cyan/yellow theme. It features rich property listings, filters, detailed pages, an AI assistant (PrimeStates AI), and a polished UI with glassmorphism and micro-animations.
 
 ## Quick Links
 - Live: https://prime-states.vercel.app/
@@ -19,7 +19,7 @@ PrimeEstates is a modern real-estate platform built with React + TypeScript and 
 - 🎨 Vibrant UI with glassmorphism, gradients, and smooth animations
 - 🔎 Filters by listing type (Buy/Rent), property type, and search query
 - 🏡 Property details with gallery, specs, features, and agent info
-- 🤖 AI Assistant powered by Google Gemini for property Q&A
+- 🤖 AI Assistant powered by PrimeStates for property Q&A
 - 📝 Sell form to submit new listings
 - 👥 Agents directory with profiles and ratings
 - 🇮🇳 Indian localization: ₹ currency, Indian cities, +91 phone numbers

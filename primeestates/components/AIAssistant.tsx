@@ -88,7 +88,7 @@ const AIAssistant: React.FC<AIAssistantProps> = ({ property }) => {
         </div>
         <div className="relative z-10">
             <h3 className="text-white font-extrabold text-lg neon-glow">Virtual Property Agent</h3>
-            <p className="text-white/80 text-xs font-medium">Powered by Gemini AI</p>
+            <p className="text-white/80 text-xs font-medium">Powered by PrimeStates AI</p>
         </div>
       </div>
 
