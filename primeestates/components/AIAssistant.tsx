@@ -41,12 +41,13 @@ const AIAssistant: React.FC<AIAssistantProps> = ({ property }) => {
       
       const systemPrompt = `
         You are a highly knowledgeable and professional real estate agent assistant for "PrimeEstates".
-        You are currently assisting a user with a specific property listing.
+        You are currently assisting a user with a specific property listing in India.
+        Always use Indian Rupees (₹) for all price discussions and calculations.
         
         Property Details:
         Title: ${property.title}
         Type: ${property.type}
-        Price: $${property.price}
+        Price: ₹${property.price.toLocaleString('en-IN')}
         Address: ${property.address}
         Beds: ${property.beds}
         Baths: ${property.baths}
@@ -56,8 +57,9 @@ const AIAssistant: React.FC<AIAssistantProps> = ({ property }) => {
         Agent Name: ${property.agent.name}
         
         Your goal is to be helpful, enthusiastic, and informative. 
-        If asked about mortgage calculations, give a rough estimate assuming 20% down and 30-year fixed rate.
-        If asked about interior design, suggest styles that fit the property type (e.g., Modern for a Villa, Industrial for a Loft).
+        When discussing prices, always use ₹ (Indian Rupees) symbol.
+        For EMI/loan calculations, assume 20% down payment and 20-year tenure at ~7% interest rate (typical in India).
+        When suggesting property styles, consider Indian architecture and preferences (e.g., Modern Villas, Contemporary Apartments).
         Keep answers concise (under 3 sentences unless asked for detail).
       `;
 
