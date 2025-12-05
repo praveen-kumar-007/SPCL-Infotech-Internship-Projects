@@ -123,7 +123,8 @@ Technology Stack: React.js 19.2.1, Tailwind CSS (CDN), TypeScript, React Router 
 Duration: 5 Days (December 1-5, 2025)
 Deadline: December 5, 2025
 Repository: https://github.com/praveen-kumar-007/SPCL-Infotech-Internship-Projects
-Live Link: http://localhost:3001
+Live Link: https://prime-states.vercel.app/
+Development Link: http://localhost:3001
 
 
 
@@ -269,7 +270,7 @@ End Time: 5:00 PM (8 hours)
 
 Project Deliverables:
 ✅ GitHub Repository with full source code
-✅ Live development server (http://localhost:3001)
+✅ Live development server (http://localhost:3001)/  Live Link: https://prime-states.vercel.app/
 ✅ Fully functional React application with TypeScript
 ✅ Responsive design for all devices
 ✅ Google Gemini AI integration
