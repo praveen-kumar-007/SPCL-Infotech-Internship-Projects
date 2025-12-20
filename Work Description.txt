@@ -295,7 +295,7 @@ Technology Stack: Node.js, Express.js, MongoDB, JWT, bcrypt
 Duration: 5 Days
 Deliverables: GitHub Repo, API Documentation, Database Schema, README
 
-Day 16: December 16, 2025 – Real Estate Property Backend System
+Day 1: December 16, 2025 – Real Estate Property Backend System
 
 Start Time: 6:00 PM
 
@@ -309,7 +309,7 @@ End Time: 9:00 PM
 
 ---
 
-Day 17: December 17, 2025 – Authentication & User Management
+Day 2: December 17, 2025 – Authentication & User Management
 Start Time: 6:30 PM
 
 Task Description:
@@ -321,7 +321,7 @@ End Time: 9:30 PM
 
 ---
 
-Day 18: December 18, 2025 – Property CRUD & Image Upload
+Day 3: December 18, 2025 – Property CRUD & Image Upload
 Start Time: 7:00 PM
 
 Task Description:
@@ -333,7 +333,7 @@ End Time: 10:00 PM
 
 ---
 
-Day 19: December 19, 2025 – Inquiry System & Advanced Search
+Day 4: December 19, 2025 – Inquiry System & Advanced Search
 Start Time: 6:30 PM
 
 Task Description:
@@ -345,7 +345,7 @@ End Time: 9:30 PM
 
 ---
 
-Day 20: December 20, 2025 – UI Tester & Finalization
+Day 5: December 20, 2025 – UI Tester & Finalization
 Start Time: 7:00 PM
 
 Task Description:
