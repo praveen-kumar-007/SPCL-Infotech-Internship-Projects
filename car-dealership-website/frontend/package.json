@@ -2,7 +2,8 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "build-config": "node build-config.js"
+    "build-config": "node build-config.js",
+    "vercel-build": "npm run build-config"
   },
   "dependencies": {
     "dotenv": "^16.4.0"
