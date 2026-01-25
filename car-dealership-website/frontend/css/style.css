@@ -398,6 +398,84 @@ body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;background
 .admin-row{margin-bottom:10px}
 .admin-row .card-body{display:flex;justify-content:space-between;align-items:center}
 
+/* =========================
+   MOBILE & VISUAL ENHANCEMENTS
+   - improves touch targets, nav overlay, hero scaling, modal and footer for smaller viewports
+   - tidy spacing and stronger CTAs for a more attractive look
+   ========================= */
+
+/* Mobile nav overlay (animated) */
+@media (max-width:900px){
+  .nav-links{right:12px;top:72px;padding:20px 18px;border-radius:12px;width:92%;max-width:320px;transform-origin:top right;transform:translateY(-8px) scale(.98);opacity:0;transition:transform .22s cubic-bezier(.2,.9,.2,1),opacity .18s ease;display:none}
+  .nav-links.open{display:flex;transform:translateY(0) scale(1);opacity:1}
+  .nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+}
+
+/* Touch-friendly buttons */
+.btn{padding:12px 18px;border-radius:12px;box-shadow:0 8px 20px rgba(13,27,42,0.06)}
+.btn.cta{padding:10px 16px}
+.btn.small{padding:8px 12px}
+
+/* Hero adjustments for small screens */
+@media (max-width:768px){
+  .hero{padding:36px 18px;min-height:44vh}
+  .hero h1{font-size:28px}
+  .hero p{font-size:15px}
+  .hero .btn{width:100%;max-width:360px}
+}
+@media (max-width:420px){
+  .hero{padding:28px 14px}
+  .hero h1{font-size:22px}
+}
+
+/* Card improvements for compact screens */
+@media (max-width:600px){
+  .card{border-radius:12px}
+  .card-body{padding:12px}
+  .card-body h3{font-size:16px}
+  .card-body p{font-size:13px}
+  .card-media{min-height:150px}
+  .card-thumbs .thumb{width:48px;height:34px}
+}
+
+/* Modal full-screen on narrow devices */
+@media (max-width:520px){
+  .modal-content{max-width:100%;margin:0;height:100%;border-radius:0;padding:16px;align-self:stretch}
+  .modal{align-items:stretch}
+}
+
+/* Footer stacked and centred on smaller screens */
+@media (max-width:700px){
+  .footer .footer-inner{grid-template-columns:1fr;gap:18px;text-align:center}
+  .footer .col{display:flex;flex-direction:column;align-items:center}
+  .footer .contact p{margin:6px 0}
+}
+
+/* Make forms easier to use on mobile */
+@media (max-width:480px){
+  .contact-form input,.contact-form textarea{padding:14px;font-size:15px}
+  .newsletter-form input{padding:12px}
+  .btn{font-size:15px}
+}
+
+/* subtle card entrance (not required but adds polish) */
+.card{opacity:1;transform:none;transition:transform .22s ease,box-shadow .22s ease,opacity .22s ease}
+.card:hover{transform:translateY(-8px)}
+
+/* Reduce container padding on small screens */
+@media (max-width:768px){
+  .container{padding:20px}
+}
+
+/* Ensure compare bar and controls are touch-friendly */
+.compare-bar{padding:12px;border-radius:10px}
+
+/* Improve accessibility: high contrast focus states */
+a:focus,button:focus,input:focus,select:focus,textarea:focus{outline:3px solid rgba(13,27,42,0.12);outline-offset:3px}
+
+
 /* Admin table */
 .admin-table{width:100%;border-collapse:collapse}
 .admin-table th,.admin-table td{padding:10px;border-bottom:1px solid rgba(0,0,0,0.06);text-align:left}
