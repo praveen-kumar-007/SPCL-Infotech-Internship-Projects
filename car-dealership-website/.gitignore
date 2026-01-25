@@ -1,0 +1,9 @@
+# Ignore environment files
+*.env
+frontend/.env.frontend
+backend/.env
+
+# Node modules (for per-folder installs)
+node_modules/
+frontend/node_modules/
+backend/node_modules/

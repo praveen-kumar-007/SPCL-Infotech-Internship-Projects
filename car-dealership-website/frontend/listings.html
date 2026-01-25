@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Car Listings | Prime Auto Dealers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/image.png">
+  <meta name="description" content="Prime Auto Dealers - browse our latest car listings. Find new & used cars with filters, photos and pricing.">
+</head>
+<body>
+
+  <div id="siteNav"></div>
+
+  <main class="container">
+    <h2 class="page-title">Available Cars</h2>
+
+<div class="filters">
+  <input type="text" id="searchInput" placeholder="Search by make or model...">
+
+  <select id="yearFilter">
+    <option value="">All Years</option>
+    <option value="2024">2024+</option>
+    <option value="2022">2022+</option>
+    <option value="2020">2020+</option>
+    <option value="2018">2018+</option>
+  </select>
+
+  <select id="priceFilter">
+    <option value="">All Prices</option>
+    <option value="1000000">Below ₹10L</option>
+    <option value="2000000">Below ₹20L</option>
+    <option value="3000000">Below ₹30L</option>
+    <option value="5000000">Below ₹50L</option>
+  </select>
+</div>
+
+
+<div class="compare-bar">
+  <span id="compareCount">0 selected</span>
+  <button id="compareBtn" class="btn" disabled>Compare</button>
+</div>
+
+
+
+<div id="carGrid" class="grid"></div>
+
+
+      <!-- Cars will be loaded here in next steps -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="col">
+        <div class="logo"><img src="public/image.png" alt="Prime Auto Dealers" class="site-logo"></div>
+        <p class="small">Trusted dealership for new & used cars across India.</p>
+      </div>
+      <div class="col contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:hello@primeautodealers.example">hello@primeautodealers.example</a></p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <p><a href="about.html">About</a> · <a href="internship.html">Internship</a> · <a href="faq.html">FAQ</a></p>
+        <div class="socials"><a href="#">Twitter</a><a href="#">LinkedIn</a></div>
+      </div>
+    </div>
+    </div>
+
+    <div class="legal">© 2026 Prime Auto Dealers. All Rights Reserved. <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+  </footer>
+
+  <div id="compareDrawer" class="compare-drawer" aria-hidden="true">
+    <div class="drawer-body">
+      <h4>Compare Cars</h4>
+      <div id="compareList"></div>
+      <div class="drawer-actions">
+        <button id="compareGo" class="btn" disabled>Compare Now</button>
+        <button id="compareClose" class="btn outline">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global modal for quick views -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

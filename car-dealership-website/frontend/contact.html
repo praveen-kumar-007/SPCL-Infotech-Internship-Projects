@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | Prime Auto Dealers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/image.png">
+  <meta name="description" content="Contact Prime Auto Dealers — reach out for inquiries, test drives and support.">
+</head>
+<body>
+
+  <div id="siteNav"></div>
+
+  <main class="container">
+    <section class="page-hero" style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+      <div style="flex:1">
+        <h2 class="page-title">Contact Us</h2>
+        <p style="color:var(--muted);max-width:720px">Have a question about a car, need help with financing, or want to schedule a test drive? Send us a message or reach out using the details to the right. We usually respond within 24 hours.</p>
+      </div>
+      <div style="flex:0 0 300px"><img src="https://images.unsplash.com/photo-1511914288736-3e486c41d5f0?q=80&w=1200&auto=format&fit=crop" alt="Contact us" style="width:100%;border-radius:8px;object-fit:cover;height:140px"></div>
+    </section>
+
+    <section class="contact-layout" style="margin-top:18px">
+      <form id="contactForm" class="contact-form">
+        <h3 style="margin-top:0">Send us a message</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Phone (optional)">
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus"></p>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Address:</strong> 42 Market Street, MG Road, Mumbai, Maharashtra, India</p>
+        <p><strong>Hours:</strong> Mon-Fri 09:30–18:30 • Sat 09:30–14:00</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@primeautodealers.example">hello@primeautodealers.example</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p class="muted">Visit us for a test drive or call to arrange an appointment. We can also assist with financing and inspection reports.</p>
+        <div style="margin-top:12px"><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=42+Market+Street+MG+Road+Mumbai" target="_blank">View on map</a></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="col">
+        <div class="logo"><img src="public/image.png" alt="Prime Auto Dealers" class="site-logo"></div>
+        <p class="small">Trusted dealership for new & used cars across India.</p>
+      </div>
+      <div class="col contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:hello@primeautodealers.example">hello@primeautodealers.example</a></p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <p><a href="about.html">About</a> · <a href="internship.html">Internship</a> · <a href="faq.html">FAQ</a></p>
+        <div class="socials"><a href="#">Twitter</a><a href="#">LinkedIn</a></div>
+      </div>
+    </div>
+    </div>
+
+    <div class="legal">© 2026 Prime Auto Dealers. All Rights Reserved. <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+  </footer>
+
+  <!-- Global modal for quick views -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Internship Task | Prime Auto Dealers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/image.png">
+  <meta name="description" content="Internship task page for Prime Auto Dealers — project brief and quick facts.">
+</head>
+<body>
+
+  <div id="siteNav"></div>
+
+  <main class="container">
+    <section class="page-hero" style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+      <div style="flex:1">
+        <h2 class="page-title">Internship: Build a Car Dealership Website</h2>
+        <p style="color:var(--muted);max-width:760px">This short 10-day internship project helps you learn practical front-end & basic back-end skills: responsive layouts, search & filters, gallery handling, and a contact flow. Submit a GitHub repo and a live deployment (Netlify/Vercel/GitHub Pages).</p>
+      </div>
+      <div style="flex:0 0 260px"><img src="https://images.unsplash.com/photo-1511914288736-3e486c41d5f0?q=80&w=800&auto=format&fit=crop" alt="Internship" style="width:100%;border-radius:12px;object-fit:cover;height:120px"></div>
+    </section>
+
+    <div style="margin-top:20px;display:flex;gap:20px;flex-wrap:wrap">
+      <nav class="internship-toc" style="flex:1 1 280px;min-width:220px">
+        <h4>Contents</h4>
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#evaluation">Evaluation</a></li>
+          <li><a href="#howto">How to Apply</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#apply">Apply</a></li>
+        </ol>
+      </nav>
+
+      <div style="flex:2 1 640px;min-width:320px">
+        <section id="overview" class="internship-card">
+          <h3>Overview</h3>
+          <p>Design and develop a responsive car dealership website that showcases listings with images, pricing, and filters. Use semantic HTML, modular CSS and clear JavaScript structure. Host your site (Netlify / Vercel / GitHub Pages) and link the repo in your submission.</p>
+        </section>
+
+        <section id="deliverables" style="margin-top:14px" class="internship-card">
+          <h3>Deliverables</h3>
+          <ul>
+            <li>Responsive homepage with featured carousel and navigation</li>
+            <li>Listings page with search, filters and consistent card layout</li>
+            <li>Car detail page with gallery and thumbnails</li>
+            <li>Contact form that persists or sends messages</li>
+            <li>README with run/deploy instructions and a short screencast or demo link</li>
+          </ul>
+        </section>
+
+        <section id="timeline" style="margin-top:14px" class="internship-card">
+          <h3>Timeline & Milestones</h3>
+          <ol>
+            <li>Day 1–2: Project setup, layout & hero, implement basic listings</li>
+            <li>Day 3–5: Filters, search and pagination; responsive testing</li>
+            <li>Day 6–8: Detail page, image gallery, quick view modal</li>
+            <li>Day 9: Polishing, accessibility, README</li>
+            <li>Day 10: Deploy and submit repo/demo link</li>
+          </ol>
+        </section>
+
+        <section id="evaluation" style="margin-top:14px" class="internship-card">
+          <h3>Evaluation</h3>
+          <p>We evaluate on <strong>Design</strong> (30%), <strong>Functionality</strong> (30%), <strong>Code Quality</strong> (25%), and <strong>Presentation</strong> (15%). See the checklist below to ensure all important parts are covered.</p>
+          <ul>
+            <li>Responsive layout, consistent cards, image fallbacks</li>
+            <li>Search and filters work correctly and are debounced</li>
+            <li>Accessible components (aria labels, focus states)</li>
+            <li>Clean repo history and deploy link</li>
+          </ul>
+        </section>
+
+        <section id="howto" style="margin-top:14px" class="internship-card">
+          <h3>How to Apply</h3>
+          <ol>
+            <li>Fork this project or create your own repo following the brief.</li>
+            <li>Complete the features and push commits with clear messages.</li>
+            <li>Deploy your site and ensure the contact form works.</li>
+            <li>Submit the GitHub repo URL and live demo link in the form below.</li>
+          </ol>
+        </section>
+
+        <section id="faq" style="margin-top:14px" class="internship-card">
+          <h3>FAQ</h3>
+          <div class="faq-item"><button class="faq-q">What tech stack can I use?</button><div class="faq-a">Any stack is fine — vanilla HTML/CSS/JS, React, Next.js, etc. Keep it simple and document how to run the project.</div></div>
+          <div class="faq-item"><button class="faq-q">Can I work in a team?</button><div class="faq-a">Yes — just note contributors in the README and provide a link to the main contributor's GitHub username.</div></div>
+          <div class="faq-item"><button class="faq-q">How should I submit?</button><div class="faq-a">Submit by filling the application form below with your GitHub repo and live demo link.</div></div>
+        </section>
+
+        <section id="apply" style="margin-top:14px" class="internship-card">
+          <h3>Apply Now</h3>
+          <p class="muted">Fill this short form and include a link to your repository and demo.</p>
+          <form id="internshipForm">
+            <input type="text" name="name" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="github" placeholder="GitHub repo URL (required)" required>
+            <input type="text" name="demo" placeholder="Live demo URL (optional)">
+            <textarea name="message" placeholder="Short message / highlights" required></textarea>
+            <button class="btn" type="submit">Submit Application</button>
+            <p id="internshipStatus"></p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="col">
+        <div class="logo"><img src="public/image.png" alt="Prime Auto Dealers" class="site-logo"></div>
+        <p class="small">Trusted dealership for new & used cars across India.</p>
+      </div>
+      <div class="col contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:hello@primeautodealers.example">hello@primeautodealers.example</a></p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <p><a href="about.html">About</a> · <a href="internship.html">Internship</a> · <a href="faq.html">FAQ</a></p>
+        <div class="socials"><a href="#">Twitter</a><a href="#">LinkedIn</a></div>
+      </div>
+    </div>
+    </div>
+
+    <div class="legal">© 2026 Prime Auto Dealers. All Rights Reserved. <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+  </footer>
+
+  <!-- Modal (shared) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

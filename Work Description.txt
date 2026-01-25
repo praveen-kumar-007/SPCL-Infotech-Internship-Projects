@@ -355,7 +355,126 @@ Task Description:
 - Deployed backend to Render and verified live API at https://spcl-infotech-internship-projects.onrender.com/
 - Final GitHub push with all changes.
 
+---
+
+Task Name: Car Dealership Website
+Start Date: January 16, 2026
+Duration: 10 Days (Jan 16 - Jan 25, 2026)
+Deadline: January 25, 2026
+Technology Stack: HTML5, CSS3 (Bootstrap/Tailwind CSS), JavaScript, Node.js/Express (optional backend)
+Version Control: GitHub (frequent commits)
+
+Analysis:
+- The existing work description uses day-by-day entries with dates and start/end times which is useful, but the format is inconsistent (varying time formats, typos, and mixed section headers). This new section adopts a concise, consistent style with daily objectives, deliverables, and recommended start/end times.
+
+Objectives:
+- Build a responsive Car Dealership Website that lists cars, supports search & filters, shows car details, includes contact/internship forms, and provides an admin dashboard for inquiries.
+- Demonstrate GitHub usage and deploy the site.
+
+Daily Plan:
+
+Day 1: Jan 16, 2026 — Project Setup & Planning
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Create project folder structure (`frontend/`, `backend/`) and initialize Git repo.
+- Create GitHub repository and push initial commit.
+- Add initial `README.md`, license, and .gitignore.
+- Initialize backend (Express) and frontend scaffold (static files), install dependencies (express, cors, http-server).
+Deliverable: Repo with README, initial scaffold, run scripts.
+
+Day 2: Jan 17, 2026 — Homepage & Navigation
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Implement banner, brand name, and responsive navigation (`partials/nav.html`).
+- Build featured carousel and hero section.
+Deliverable: Working homepage with featured cars and responsive nav.
+
+Day 3: Jan 18, 2026 — Car Listings Page
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Create `listings.html`, grid layout, and card components to display cars from `frontend/data/cars.json`.
+- Implement image placeholders and thumbnails.
+Deliverable: Listings page rendering car data.
+
+Day 4: Jan 19, 2026 — Search & Filters
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Implement search (make/model), year and price filters, and debounce behavior.
+- Wire filters to rendering logic and add UI controls.
+Deliverable: Functional search and filter UX.
+
+Day 5: Jan 20, 2026 — Car Details & Gallery
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Build `car.html` detail page with larger gallery, thumbnails, specs, and contact CTA.
+- Ensure responsive layout and image protection/fallback.
+Deliverable: Car details page with working gallery.
+
+Day 6: Jan 21, 2026 — Contact & Internship Forms + Backend
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Implement contact and internship forms on frontend (`contact.html`, `internship.html`).
+- Build backend endpoints `/contact` and `/apply` to store submissions in JSON files.
+- Test end-to-end form submission.
+Deliverable: Forms integrated with backend and persisting data.
+
+Day 7: Jan 22, 2026 — Admin Dashboard
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Create `admin.html` and `admin.js` for viewing inquiries and applications.
+- Add simple admin login (`/admin/login`) and token-based auth support.
+- Enable status update, search, and CSV export.
+Deliverable: Functional admin dashboard and protected endpoints.
+
+Day 8: Jan 23, 2026 — Comparison & Quick View, UI Polish
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Implement compare feature (2 cars), quick view modal, and drawer UI.
+- Add small UI polish: badges, price formatting, accessibility improvements.
+Deliverable: Compare and quick view features with refined UI.
+
+Day 9: Jan 24, 2026 — Testing, Responsiveness & Documentation
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Cross-device testing, fix visual/functional bugs, and performance tweaks.
+- Update `README.md` with setup, API docs, and deployment instructions.
+Deliverable: Tested site and updated documentation.
+
+Day 10: Jan 25, 2026 — Deployment & Final Delivery
+Start Time: 6:00 PM  End Time: 9:00 PM
+Tasks:
+- Deploy frontend (Netlify/GitHub Pages) and backend (Render/Heroku) or provide run instructions.
+- Finalize commits, tag release, prepare short demo notes and slide bullets for presentation.
+Deliverable: Deployed site, GitHub repo with final commits, and presentation notes.
+
+Deliverables Summary:
+- Fully functional responsive Car Dealership Website
+- Source code pushed to GitHub with meaningful commits
+- Live deployment link(s)
+- Updated `README.md` and short demo notes
+
+Evaluation Mapping:
+- Design & UX: 30%
+- Functionality (search/filter/details): 30%
+- Code quality & structure: 20%
+- GitHub usage & commits: 10%
+- Presentation/demo: 10%
+
+Notes & Recommendations:
+- Use frequent, descriptive commits. Use feature branches when adding larger features.
+- For production, replace JSON storage with a DB and secure admin credentials via environment variables.
+- Consider adding simple unit tests or linting for code quality.
+
+---
+
 End Time: 10:00 PM
 
 ---
 
+
+
+
+
+
+
+New Project Assigned

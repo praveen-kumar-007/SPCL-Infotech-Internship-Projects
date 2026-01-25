@@ -1,0 +1,5 @@
+.env
+# optionally ignore generated data files (uncomment to protect production data)
+# inquiries.json
+# applications.json
+node_modules/

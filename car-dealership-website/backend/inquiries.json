@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1769360281101,
+    "name": "PRAVEEN KUMAR",
+    "email": "impraveen105@gmail.com",
+    "message": "I want to buy",
+    "time": "2026-01-25T16:58:01.101Z"
+  },
+  {
+    "id": 1769368475407,
+    "type": "inquiry",
+    "name": "Praveen",
+    "email": "ankitkumargiri9015@gmail.com",
+    "message": "Internship application\nGitHub: https://github.com/praveen-kumar-007\nDemo: \n\nhhhhhhhhhhhh",
+    "carId": null,
+    "carTitle": null,
+    "status": "new",
+    "time": "2026-01-25T19:14:35.407Z"
+  }
+]

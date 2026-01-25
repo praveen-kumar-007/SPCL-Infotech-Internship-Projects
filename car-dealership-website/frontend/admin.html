@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Dashboard | Prime Auto Dealers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <div class="admin-wrap container">
+    <h1 style="margin-bottom:12px">Admin Dashboard</h1>
+
+    <div class="admin-auth">
+      <label>Admin login</label>
+      <div style="display:flex;gap:8px;margin-top:6px">
+        <input id="adminUser" placeholder="Admin ID" style="padding:10px;border-radius:8px;border:1px solid #ddd;width:160px">
+        <input id="adminPass" placeholder="Password" type="password" style="padding:10px;border-radius:8px;border:1px solid #ddd;flex:1">
+        <button id="btnLogin" class="btn">Login</button>
+        <button id="btnLogout" class="btn outline">Logout</button>
+      </div>
+      <p style="margin-top:8px;display:flex;gap:8px;align-items:center"><span id="adminUserInfo" class="muted">Not logged in (local dev default: <code>admin</code> / <code>changeme</code>)</span><button id="btnWhoami" class="btn outline">Show details</button></p>
+
+      <label style="margin-top:12px">API Base URL</label>
+      <div style="display:flex;gap:8px;margin-top:6px">
+        <input id="apiBase" placeholder="http://localhost:5000" style="flex:1;padding:10px;border-radius:8px;border:1px solid #ddd">
+        <button id="saveApi" class="btn">Save</button>
+        <button id="testApi" class="btn outline">Test</button>
+      </div>
+      <p id="apiStatus" class="muted" style="margin-top:8px"></p>
+    </div>
+
+    <div class="admin-toolbar card" style="margin-top:18px;padding:12px">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <select id="datasetSelect" style="padding:10px;border-radius:8px;border:1px solid #ddd">
+          <option value="inquiries">Inquiries</option>
+          <option value="applications">Applications</option>
+        </select>
+
+        <input id="adminSearch" placeholder="Search email / name / repo / carId" style="flex:1;min-width:220px;padding:10px;border-radius:8px;border:1px solid #e6e9ee">
+
+        <label class="muted">From</label>
+        <input id="filterFrom" type="date" style="padding:8px;border-radius:6px;border:1px solid #ddd">
+        <label class="muted">To</label>
+        <input id="filterTo" type="date" style="padding:8px;border-radius:6px;border:1px solid #ddd">
+
+        <button id="btnFetch" class="btn">Load</button>
+        <button id="btnRefresh" class="btn outline">Refresh</button>
+        <button id="btnExport" class="btn">Export CSV</button>
+
+        <div style="margin-left:auto;display:flex;gap:10px;align-items:center">
+          <div class="muted">Last sync: <span id="lastSync">—</span></div>
+          <div id="adminMessages" style="margin-left:6px"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="adminResults" style="margin-top:14px"></section>
+
+    <!-- modal for details -->
+    <div id="adminModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div id="adminModalBody"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
