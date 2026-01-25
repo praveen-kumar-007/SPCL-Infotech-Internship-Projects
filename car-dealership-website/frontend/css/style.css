@@ -16,17 +16,31 @@ html,body{height:100%}
 body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--primary);-webkit-font-smoothing:antialiased}
 
 /* NAVBAR */
+:root{--header-height:64px}
 .container-row{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 12px}
 .navbar {
   background: #0d1b2a;
   color: #fff;
   padding: 14px 0;
+  position: sticky; /* keep nav on top */
+  top: 0;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .logo {display:flex;align-items:center;gap:12px}
 .logo .brand-name{margin-left:6px;font-weight:800;color:var(--accent);font-size:18px}
 .site-logo{height:42px;width:auto;display:block;border-radius:8px;background:#fff;padding:6px;box-shadow:0 8px 24px rgba(13,27,42,0.08)}
 @media (max-width:900px){.site-logo{height:30px;padding:4px}.brand-name{display:none}}
+
+/* ensure mobile nav sits above other content */
+.nav-toggle{position:relative;z-index:1001}
+.nav-links{position:relative;z-index:1000}
+.nav-links.open{z-index:1001}
+
+/* prevent content from sliding under sticky header when using anchor links */
+:target::before{content:'';display:block;height:var(--header-height);margin-top:calc(var(--header-height) * -1)}
 
 .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 
